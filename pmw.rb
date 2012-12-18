@@ -7,6 +7,11 @@ class Pmw < Formula
 
   depends_on 'Tkinter' => :python
 
+  devel do
+    url 'http://downloads.sourceforge.net/project/pmw/Pmw2/Pmw.2.0.0-alpha/Pmw.2.0.0.tar.gz'
+    sha1 '88cd160c32617a2da1b06d567710336156ac0a71'
+  end
+
   def install
     # Pmw cannot be installed with pip because it is not in PyPI and
     # `pip install ${URL}` fails. This is probably because of the
